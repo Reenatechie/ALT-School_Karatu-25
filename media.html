@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me with Media</title>
+</head>
+<body>
+
+  <h1>About Me – Powered by Media</h1>
+
+  <!-- Responsive image using <picture> -->
+  <h2>Responsive Profile Image</h2>
+  <picture>
+    <source media="(min-width:1024px)" srcset="laptop.jpg">
+    <source media="(min-width:768px)" srcset="tablet.jpg">
+    <img src="mobile.jpg" alt="Profile photo" width="300">
+  </picture>
+  <p>This image changes based on your device: mobile, tablet, or laptop.</p>
+
+  <!-- Audio -->
+  <h2>Voice Message</h2>
+  <audio controls>
+    <source src="my-voice.mp3" type="audio/mpeg">
+    <source src="my-voice.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Video -->
+  <h2>Short Intro Video</h2>
+  <video width="320" height="240" controls>
+    <source src="intro.mp4" type="video/mp4">
+    <source src="intro.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Iframe -->
+  <h2>Embedded YouTube Video</h2>
+  <iframe width="360" height="215" 
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+    title="YouTube video"
+    allowfullscreen>
+  </iframe>
+
+  <p><a href="index.html">← Back to Profile</a></p>
+
+</body>
+</html>
